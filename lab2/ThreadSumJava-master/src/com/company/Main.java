@@ -3,7 +3,7 @@ package com.company;
 public class Main {
     public static void main(String[] args) {
         int dim = 10000;
-        int threadNum = 9;
+        int threadNum = 12;
         ArrClass arrClass = new ArrClass(dim, threadNum);
         int[] result = arrClass.partMin(0,dim);
         System.out.println("Min num: " + result[0] + " Index: " + result[1]);
