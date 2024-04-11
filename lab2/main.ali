@@ -1,0 +1,97 @@
+V "GNAT Lib v2021"
+M P W=b
+A -O2
+A -gnatA
+A -g
+A -gnatc
+A -mtune=generic
+A -march=x86-64
+P NO FX
+
+RN
+RV SIMPLE_BARRIERS
+RV NO_ENTRY_CALLS_IN_ELABORATION_CODE
+RV NO_IO
+RV NO_LOCAL_PROTECTED_OBJECTS
+RV NO_NESTED_FINALIZATION
+RV NO_PROTECTED_TYPES
+RV NO_TASK_HIERARCHY
+RV NO_TASKING
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV MAX_PROTECTED_ENTRIES=1
+RV MAX_TASK_ENTRIES=1
+RV MAX_TASKS=1+
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U main%b		main.adb		214d414d OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D main.adb		20240410103208 8fb99420 main%b
+D system.ads		20210520051136 2ffa5114 system%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z b b [main standard 2 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 10|1r6 1r23
+X 7 a-textio.ads
+58K13*Text_IO 725e16 10|1w10 1r27
+506U14*Put_Line 10|101s7 102s7 103s7 104s7
+X 10 main.adb
+2U11*Main 2b11 106l8 106t12
+4i4 dim{integer} 7r19 17r17 81r29 90r44 98r48
+5i4 thread_num{integer} 17r23 58r63 80r25 81r35 85r20 90r14
+7a4 arr(integer) 16r16 18m13 20m13 26r29 29r13 30r26 46r30
+9R9 Value_Index 12e14 25r69 26r13 42r39 43r31 46r14 50r39 58r31 66r13 78r33
+. 79r13 98r21 99r28
+10i7 value{integer} 29r26 30m17 52r17 52r30 101r46 103r65
+11i7 index{integer} 31m17 102r44 104r63
+14U14 Init_Arr 14b14 23l8 23t16 96s4
+16i11 I{integer} 17r13 18r17 18r23 20r17 20r23
+25V13 part_min{9R9} 25b13 25>22 25>35 35l8 35t16 73s14 98s36
+25i22 start_index{integer} 26r33 26r47 28r16 73r23
+25i35 finish_index{integer} 28r29 74r23
+26r7 min{9R9} 29r22 30m13 31m13 34r14
+28i11 i{integer} 29r17 30r30 31r26
+37T14 starter_thread 39l8 39e22 65b14 70m10 71m10 76l8 76t22 80r40
+38Y13 start 38>19 38>32 69b14 72l11 72t16 87s20 90s26
+38i19 start_index{integer} 70r40
+38i32 finish_index{integer} 71r41
+41w14 part_manager 49b19 63l8 63t20 75r7 91r7
+42U17 set_part_min 42>30 50b17 56l11 56t23 75s20
+42r30 min{9R9} 50b30 52r13 53r21
+43Y13 get_min 43<21 58b13 61l11 61t18 91s20
+43r21 min{9R9} 60m10
+45i7 tasks_count{integer} 55m10 55r25 58r49
+46r7 min1{9R9} 52r25 53m13 60r17
+58r21 min{9R9}
+66r7 min{9R9} 73m7 75r33
+67i7 start_index{integer} 70m25 73r39
+67i20 finish_index{integer} 71m25 74r39
+69i20 start_index{integer}
+69i33 finish_index{integer}
+78V13 parallel_min{9R9} 78b13 93l8 93t20 99s43
+79r7 min{9R9} 91m28 92r14
+80a7 thread(37T14) 87r10 90r7
+81i7 chunkSize{integer} 86r35
+82i7 startIndex{integer} 86r22 87r26 88m10 90r32
+83i7 endIndex{integer} 86m10 87r38 88r24
+85i11 I{integer} 87r17
+98r7 Min_Element{9R9} 101r34 102r32
+99r7 Min_Element_Thread{9R9} 103r46 104r44
+
